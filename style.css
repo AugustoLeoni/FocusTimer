@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-card: #E1E1E6;
+
+  --tx-timer: #323238;
+
+  --bg-body: #FFFFFF;
+
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+
+  background-color: var(--bg-body);
+
+}
+
+.timer {
+  display: flex;
+  width: 32.1rem;
+}
+
+.timer p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.7rem;
+  line-height: 14.8rem;
+
+  text-align: center;
+
+  color: var(--tx-timer);
+
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  width: 31.2rem;
+}
+
+.options svg {
+  cursor: pointer;
+}
+
+.card {
+  width: 13.8rem;
+  height: 15.2rem;
+  background-color: var(--bg-card);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2.4rem;
+  
+  cursor: pointer;
+}
+
+.container-card {
+  display: grid;
+  grid-template-areas: "A B"
+  "C D";
+  gap: 3.2rem;
+}
+
+.selected {
+  background-color: #02799D;
+}
+.selected svg path {
+  fill: white;
+}
